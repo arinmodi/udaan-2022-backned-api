@@ -4,7 +4,7 @@ const constants = require('../constants');
 const mongoose = require("mongoose");
 
 module.exports = async (req,res) => {
-    const voterId = req.body.voterId.toUpperCase();
+    const voterId = req.body.voterId.trim().toUpperCase();
     const result = await voter.findOne({ voterId : voterId });
 
     console.log(result);
