@@ -65,11 +65,11 @@ module.exports = async (req,res) => {
 
 
         res.status(200).send({
-            message : "Voted ..."
+            message : "Your vote is submitted successfully!"
         });
     }else{
         res.status(400).send({
-            message : "User Already Voted"
+            message : "Your vote is already registered !"
         });
     }
 }
