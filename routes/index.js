@@ -5,6 +5,6 @@ const getVotes = require('./getVotes');
 const schema = require('./validation');
 
 router.patch('/vote', validate(schema) ,vote);
-router.get('/fetch/udaan_22/votes', getVotes);
+router.get('/udaan22/fetch/votes/awards/red/carpet', getVotes);
 
 module.exports = router;
